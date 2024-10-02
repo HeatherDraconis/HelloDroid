@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:context=".HelloDroidActivity" android:id="@+id/ConstraintLayout">
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" app:srcCompat="@drawable/droid" android:id="@+id/droidImage"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="168dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="93dp" android:layout_marginEnd="93dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginBottom="30dp"
+            app:layout_constraintBottom_toTopOf="@+id/clickCounter"/>
+    <TextView
+            android:text="@string/welcome_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/clickCounter"
+            android:padding="@dimen/droid_count_padding_value" android:paddingStart="@dimen/droid_count_padding_value"
+            android:paddingLeft="@dimen/droid_count_padding_value"
+            android:paddingTop="@dimen/droid_count_padding_value"
+            android:paddingEnd="@dimen/droid_count_padding_value"
+            android:paddingRight="@dimen/droid_count_padding_value"
+            android:paddingBottom="@dimen/droid_count_padding_value"
+            android:textColor="@color/text_colour" android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="103dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="104dp"
+            android:layout_marginTop="30dp" app:layout_constraintTop_toBottomOf="@+id/droidImage"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="170dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
